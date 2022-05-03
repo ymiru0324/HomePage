@@ -1,4 +1,4 @@
-const URL = "https://v1.nocodeapi.com/yongmini/instagram/ToXUBLgMvXQEXXQt"
+const URL = "https://v1.nocodeapi.com/yongmini/instagram/JXoEPxaNOPMSdFJW"
 
 
 $(".btn-cardOpen").click(() => {

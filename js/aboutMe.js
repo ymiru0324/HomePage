@@ -1,4 +1,4 @@
-const USER_URL ="/data.json";
+const USER_URL ="/json/data.json";
 const GITHUB_URL = "https://api.github.com/users/";
 
 $(window).on('load', async () => {
