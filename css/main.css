@@ -166,6 +166,7 @@
     height:150px;
   }
   .info_Container {
+    margin-top: 20px;
     font-family: 'Jua', sans-serif;
   }
   .card-body .btn {
@@ -191,14 +192,12 @@
 
 /* Instagram */
   #Instagram { 
-    border: 1px solid blue;
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
   }
   #insta_container {
-    border: 1px solid green;
     width: 50%;
     align-items: center;
   }
