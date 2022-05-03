@@ -2,12 +2,14 @@
 $(window).on('scroll', function() {
   if (window.scrollY > 100) {
     $('.navbar-brand').css('fontSize', '20px')
+    $('#insta-img').css('width', '20px')
   } else {
     $('.navbar-brand').css('fontSize', '30px')
+    $('#insta-img').css('width', '30px')
   }
 });
 
-$(".test").click(function(){
+$(".MoveNavBar").click(function(){
   const bn = $(this).parent().index();
   const bt = $(".box" + bn).offset().top - 80;
   $("html, body").animate({"scrollTop":bt},700);

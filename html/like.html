@@ -22,82 +22,111 @@
 
 </head>
 <body>
-
 <!-- scroll -->
-  <div class="barcontainer bg-dark">
-    <div class="progressbar"></div>
+<div class="barcontainer bg-dark">
+  <div class="progressbar"></div>
+</div>
+
+<script src="/js/scroll.js"></script>
+<!-- scroll -->
+
+<!-- nav -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="gnb container-fluid bg-dark">
+    <span class="navbar-brand"></span>
+    <span class="navbar-brand"><a class="MoveNavBar" href="#">Music🎸</a></span>
+    <span class="navbar-brand"><a class="MoveNavBar" href="#">Drink🥃</a></span>
+    <span class="navbar-brand"><a class="MoveNavBar" href="#">Instagram <img src="/img/insta.png" id="insta-img"></a></span>
+    <span class="navbar-brand"><a href="/index.html">\^_^</a></span>
+    <span class="navbar-brand"></span>
   </div>
+</nav> 
+<div class="bg-dark" id="nav_div"></div>
 
-  <script src="/js/scroll.js"></script>
-<!-- scroll -->
-
+<script src="/js/nav.js"></script>
 <!-- nav -->
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid bg-dark">
-      <span class="navbar-brand"></span>
-      <span class="navbar-brand">Instagram</span>
-      <span class="navbar-brand">test</span>
-      <span class="navbar-brand">test</span>
-      <span class="navbar-brand">
-        <a href="/index.html">\^_^</a>
-      </span>
-      <span class="navbar-brand"></span>
-      <!-- <span class="badge bg-dark">Dark 🔄</span> -->
-      <!-- <button class="navbar-toggler" type="button"> -->
-        <!-- <span class="navbar-toggler-icon"></span> -->
-      <!-- </button> -->
+
+<!-- Music -->
+  <section class="box1">
+    <div class="bg-dark" id="Music">
+      Music🎸
     </div>
-  </nav> 
-  <div class="bg-dark" id="nav_div"></div>
+  </section>
+<!-- Music -->
 
-  <script src="/js/nav.js"></script>
-<!-- nav -->
+<!-- Drink -->
+  <section class="box2">
+    <div class="bg-dark" id="Drink">
+      Drink🥃
+    </div>
+  </section>
+<!-- Drink -->
+
 
 <!-- Instagram -->
-<div class="bg-dark" id="Instagram">
-  <div id="insta_container">
-    <div><h2 class="info_Container">Instagram</h2><br></div>
+  <section class="box3">
+    <div class="bg-dark" id="Instagram">
+      <div id="insta_container">
+        <div><h2 class="info_Container">Instagram</h2><br></div>
+        
+        <button type="button" class="btn btn-cardOpen btn-light">Click Me</button>
 
-    <div class="inst-card_container">test</div>
-      <div class="insta-card bg-dark" id="insta-img-1"></div>
-    <div class="inst-card_container">test</div>
-      <div class="insta-card bg-dark" id="insta-img-2"></div>
-    <div class="inst-card_container">test</div>
-      <div class="insta-card bg-dark" id="insta-img-3"></div>
-    <div class="inst-card_container">test</div>
-      <div class="insta-card bg-dark" id="insta-img-4"></div>
-    
-    <!-- <div class="insta-card-group">
-      <div class="insta-card bg-dark">
-        <img src="/img/BU_Check.PNG" class="insta-card-img-top" alt="...">
-        <div class="insta-card-body">
-          <h5 class="insta-card-title">Card title</h5>
-          <p class="insta-card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="insta-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
+          <div id="insta-card_container">
+            <div class="card bg-dark" style="width: 18rem;">
+              <div id="insta-img-0"></div>
+              <div class="card-body">
+                <p class="card-text" id="card-text-0"></p>
+              </div>
+            </div>
+            <div class="card bg-dark" style="width: 18rem;">
+              <div id="insta-img-1"></div>
+              <div class="card-body">
+                <p class="card-text" id="card-text-1"></p>
+              </div>
+            </div>
+            <div class="card bg-dark" style="width: 18rem;">
+              <div id="insta-img-2"></div>
+              <div class="card-body">
+                <p class="card-text" id="card-text-2"></p>
+              </div>
+            </div>
+            <div class="card bg-dark" style="width: 18rem;">
+              <div id="insta-img-3"></div>
+              <div class="card-body">
+                <p class="card-text" id="card-text-3"></p>
+              </div>
+            </div>
+            <div class="card bg-dark" style="width: 18rem;">
+              <div id="insta-img-4"></div>
+              <div class="card-body">
+                <p class="card-text" id="card-text-4"></p>
+              </div>
+            </div>
+            <div class="card bg-dark" style="width: 18rem;">
+              <div id="insta-img-5"></div>
+              <div class="card-body">
+                <p class="card-text" id="card-text-5"></p>
+              </div>
+            </div>
+          </div>
+
       </div>
-      <div class="insta-card bg-dark">
-        <img src="..." class="insta-card-img-top" alt="...">
-        <div class="insta-card-body">
-          <h5 class="insta-card-title">Card title</h5>
-          <p class="insta-card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="insta-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="insta-card bg-dark">
-        <img src="..." class="insta-card-img-top" alt="...">
-        <div class="insta-card-body">
-          <h5 class="insta-card-title">Card title</h5>
-          <p class="insta-card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="insta-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div> -->
-  </div>
-</div>
+    </div>
+  </section>
 <script src="/js/insta.js"></script>
 <!-- Instagram -->
 
-  <div class="bg-dark"style="height: 2000px"></div>
+<!-- footer -->
+  <div id="footer">
+    <div id="footer_container">
+      <span>
+        <a href="https://github.com/ymiru0324/KH-HomePage" target='_blank'>
+          <img src="/img/github.png" alt="HomePage Project"> HomePage Project
+        </a>
+      </span>
+
+    </div>
+  </div>
+<!-- footer -->
 </body>
 </html>
