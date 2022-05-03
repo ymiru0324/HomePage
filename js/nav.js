@@ -6,3 +6,10 @@ $(window).on('scroll', function() {
     $('.navbar-brand').css('fontSize', '30px')
   }
 });
+
+$(".test").click(function(){
+  const bn = $(this).parent().index();
+  const bt = $(".box" + bn).offset().top - 80;
+  $("html, body").animate({"scrollTop":bt},700);
+  return false;
+});

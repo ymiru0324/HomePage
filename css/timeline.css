@@ -16,6 +16,11 @@ ul {
 a {
   text-decoration: none !important;
   display: inline-block;
+  color: white;
+}
+
+a:hover {
+  color:black;
 }
 
 img {
@@ -32,7 +37,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* color:  */
   margin: 0;
 }
 p {

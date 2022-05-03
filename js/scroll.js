@@ -11,7 +11,7 @@ $(window).scroll(function() {
 
   if(htmlscrollCheck == true) {
     if (htmlscrollMount + htmlHeight > htmlscrollHeight - 100) {
-        alert('다 읽음')
+        // alert('다 읽음')
 
         htmlscrollCheck = false;
     }

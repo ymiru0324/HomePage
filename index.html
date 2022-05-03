@@ -22,7 +22,6 @@
   
 </head>
 <body>
-  
 <!-- scroll -->
   <div class="barcontainer bg-dark">
     <div class="progressbar"></div>
@@ -33,17 +32,13 @@
 
 <!-- nav -->
   <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid bg-dark">
+    <div class="gnb container-fluid bg-dark">
       <span class="navbar-brand"></span>
-      <span class="navbar-brand">AboutMe</span>
-      <span class="navbar-brand">Timelines</span>
-      <span class="navbar-brand">Project</span>
-      <span class="navbar-brand">Instagram</span>
+      <span class="navbar-brand"><a class="test" href="#">AboutMe</a></span>
+      <span class="navbar-brand"><a class="test" href="#">Timelines</a></span>
+      <span class="navbar-brand"><a class="test" href="#">Project</a></span>
+      <span class="navbar-brand"><a href="/html/like.html">^_^/</a></span>
       <span class="navbar-brand"></span>
-      <!-- <span class="badge bg-dark">Dark 🔄</span> -->
-      <!-- <button class="navbar-toggler" type="button"> -->
-        <!-- <span class="navbar-toggler-icon"></span> -->
-      <!-- </button> -->
     </div>
   </nav> 
   <div class="bg-dark" id="nav_div"></div>
@@ -51,44 +46,43 @@
   <script src="/js/nav.js"></script>
 <!-- nav -->
 
-<!-- test main page -->
-  <!-- <div class="main-bg">
-    <h4>Homepage</h4>
-    <button id="login" class="btn btn-danger">로그인</button>
-  </div> -->
-<!-- test main login -->
 
 <!-- AboutMe -->
-  <div class="AboutMe bg-dark" id="AboutMe">
-    <div class="AboutMe_div" id="AboutMe_pic">
-      <div id="AboutMe_pic_info"></div>
-    </div>
+  <section class="box1">
+    <div class="AboutMe bg-dark" id="AboutMe">
+      <div class="AboutMe_div" id="AboutMe_pic">
+        <div id="AboutMe_pic_info"></div>
+      </div>
 
-    <div class="AboutMe_div" id="AboutMe_info">
-      <a class="aName">김용민 KimYongMin</a>
-      <div>
-        <div id="AboutMe_info_span">
-          <span class="category">E-Mail</span><br>
-          <span class="category">GitHub</span><br>
-          <span class="category">Blog</span><br>
-          <span class="category">Instagram</span><br>
-        </div>
-        <div id="AboutMe_info_a">
-          <a class="alink">ymiru0324@naver.com</a><br>
-          <a href="https://github.com/ymiru0324" target='_blank' class="alink">github.com/ymiru0324</a><br>
-          <a href="https://brookigumi.tistory.com/" target='_blank' class="alink">brookigumi.tistory.com</a><br>
-          <a href="https://www.instagram.com/_yongmini/" target='_blank' class="alink">_yongmini</a><br>
+      <div class="AboutMe_div" id="AboutMe_info">
+        <a class="aName">김용민 KimYongMin</a>
+        <div>
+          <div id="AboutMe_info_span">
+            <span class="category">E-Mail</span><br>
+            <span class="category">GitHub</span><br>
+            <span class="category">Blog</span><br>
+            <span class="category">Instagram</span><br>
+          </div>
+          <div id="AboutMe_info_a">
+            <a class="alink">ymiru0324@naver.com</a><br>
+            <a href="https://github.com/ymiru0324" target='_blank' class="alink">github.com/ymiru0324</a><br>
+            <a href="https://brookigumi.tistory.com/" target='_blank' class="alink">brookigumi.tistory.com</a><br>
+            <a href="https://www.instagram.com/_yongmini/" target='_blank' class="alink">_yongmini</a><br>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <script src="/js/aboutMe.js"></script>
 <!-- AboutMe -->
 
+  <hr class="_hr">
+
 <!-- DevStack -->
   <div class="bg-dark" id="DevStack">
     <div id="DevStack_Myinfo">
+      <br>
       안녕하세요🖐<br>
       Web Full-Stack 개발자를 목표로 하고 있는 김용민입니다!<br>
       저의 목표는 끊임없이 도전하고, 사람의 가치를 믿는 개발자가 되는 것입니다!<br>
@@ -143,219 +137,184 @@
   </div>
 <!-- DevStack -->
 
-<!-- DevRoadMap -->
-  <div class="bg-dark" id="DevRoadMap">
-    <div class="timeline-area">
-      <div class="container">
-        <div class="timelines">
-          <h2>Timelines</h2>
-        </div>
-        <div class="all-timelines">
-           <!--SINGLE TIMELINE-->
-           <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2016.03 ~ 2022.02</h6><br>
-                부천대학교 컴퓨터소프트웨어학과 졸업
-              </span>
+  <hr class="_hr">
+
+<!-- TimelineMap -->
+  <section class="box2">
+    <div class="bg-dark" id="TimelineMap">
+      <div class="timeline-area">
+        <div class="container">
+          <div class="timelines">
+            <h2>Timelines</h2>
+          </div>
+          <div class="all-timelines">
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2016.03 ~ 2022.02</h6><br>
+                  부천대학교 컴퓨터소프트웨어학과 졸업
+                </span>
+                <div class="t-square"></div>
+              </div>
+            </div>
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2018.07 ~ 2018.08</h6><br>
+                  더조은컴퓨터아카데미 자바프로그래밍 초급 과정 수료
+                </span>
+                <div class="t-square"></div>
+              </div>
+            </div>
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2018.09 ~ 2018.12</h6> <br>
+                  C# 프로젝트 '성적 관리 프로그램' 개발
+                </span>
+                <div class="t-square"></div>
+              </div>
+            </div>
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2021.01 ~ 2021.11</h6><br>
+                  부천대학교 졸업작품 프로젝트 'AMP(학원 관리 사이트)' 개발
+                </span>
+                <div class="t-square"></div>
+              </div>
+            </div>
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2021.07 ~ 2021.08</h6><br>
+                  코멘토 직무부트캠프 웹 개발 과정 수료
+                </span>
+                <div class="t-square"></div>
+              </div>
+            </div>
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2022.01 ~ 현재</h6><br>
+                  KH정보교육원 JAVA기반 공공데이터 융합 개발자 양성 과정
+                </span>
+                <div class="t-square"></div>
+              </div>
+            </div>
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2022.03 ~ 현재</h6><br>
+                  동양미래대학교 컴퓨터소프트웨어공학과 학사학위 과정
+                </span>
+                <div class="t-square"></div>
+              </div>
+            </div>
+            <div class="single-timeline d-flex-2">
+              <div class="timeline-blank"></div>
+              <div class="timeline-text d-flex-2">
+                <span>
+                  <h6>2022.03 ~ 현재</h6><br>
+                  동양미래대학교 졸업작품 프로젝트 'MuLetter' 개발
+                </span>
               <div class="t-square"></div>
             </div>
-          </div>
-          <!--SINGLE TIMELINE-->
-          <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2018.07 ~ 2018.08</h6><br>
-                더조은컴퓨터아카데미 자바프로그래밍 초급 과정 수료
-              </span>
-              <div class="t-square"></div>
-            </div>
-          </div>
-          <!--SINGLE TIMELINE-->
-          <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2018.09 ~ 2018.12</h6> <br>
-                C# 프로젝트 '성적 관리 프로그램' 개발
-              </span>
-              <div class="t-square"></div>
-            </div>
-          </div>
-          <!--SINGLE TIMELINE-->
-          <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2021.01 ~ 2021.11</h6><br>
-                부천대학교 졸업작품 프로젝트 'AMP(학원 관리 사이트)' 개발
-              </span>
-              <div class="t-square"></div>
-            </div>
-          </div>
-          <!--SINGLE TIMELINE-->
-          <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2021.07 ~ 2021.08</h6><br>
-                코멘토 직무부트캠프 웹 개발 과정 수료
-              </span>
-              <div class="t-square"></div>
-            </div>
-          </div>
-          <!--SINGLE TIMELINE-->
-          <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2022.01 ~ 현재</h6><br>
-                KH정보교육원 JAVA기반 공공데이터 융합 개발자 양성 과정
-              </span>
-              <div class="t-square"></div>
-            </div>
-          </div>
-          <!--SINGLE TIMELINE-->
-          <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2022.03 ~ 현재</h6><br>
-                동양미래대학교 컴퓨터소프트웨어공학과 학사학위 과정
-              </span>
-              <div class="t-square"></div>
-            </div>
-          </div>
-          <!--SINGLE TIMELINE-->
-          <div class="single-timeline d-flex-2">
-            <div class="timeline-blank"></div>
-            <div class="timeline-text d-flex-2">
-              <span>
-                <h6>2022.03 ~ 현재</h6><br>
-                동양미래대학교 졸업작품 프로젝트 'MuLetter' 개발
-              </span>
-            <div class="t-square"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
+  </section> 
 <!-- DevRoadMap -->
 
+  <hr class="_hr">
+
 <!-- Project -->
-  <div class="bg-dark" id="Project">
-    <div id="Project_Container">
-      <div><h2 class="info_Container">Project</h2><br></div>
-      <div class="card bg-dark" style="width: 18rem;">
-        <img src="/img/MuLetter.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">MuLetter</h5>
-          <p class="card-text" >당신만을 위한 음악편지</p><br>
-          <a href="https://github.com/MuLetter" target='_blank' class="btn btn-primary stretched-link">Go MuLetter</a>
+  <section class="box3">
+    <div class="bg-dark" id="Project">
+      <div id="Project_Container"><br>
+        <div><h2 class="info_Container">Project</h2><br></div>
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="/img/MuLetter.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MuLetter</h5>
+            <p class="card-text" >당신만을 위한 음악편지</p><br>
+            <a href="https://github.com/MuLetter" target='_blank' class="btn btn-primary stretched-link">Go MuLetter</a>
+          </div>
         </div>
-      </div>
-      <div class="card bg-dark" style="width: 18rem;">
-        <img src="/img/Chat-Node.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Chat-Node</h5>
-          <p class="card-text" >Node.js를 활용한 채팅 사이트 <br>(현재 개발중)</p>
-          <a href="https://github.com/Chat-Node" target='_blank' class="btn btn-primary stretched-link">Go Chat-Node</a>
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="/img/Chat-Node.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chat-Node</h5>
+            <p class="card-text" >Node.js를 활용한 채팅 사이트 <br>(현재 개발중)</p>
+            <a href="https://github.com/Chat-Node" target='_blank' class="btn btn-primary stretched-link">Go Chat-Node</a>
+          </div>
         </div>
-      </div>
-      <div class="card bg-dark" style="width: 18rem;">
-        <img src="/img/HomePage.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">HomePage</h5>
-          <p class="card-text" >개인 홈페이지 프로젝트</p><br>
-          <a href="https://github.com/ymiru0324/KH-HomePage" target='_blank' class="btn btn-primary stretched-link">Go HomePage</a>
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="/img/HomePage.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HomePage</h5>
+            <p class="card-text" >개인 홈페이지 프로젝트</p><br>
+            <a href="https://github.com/ymiru0324/KH-HomePage" target='_blank' class="btn btn-primary stretched-link">Go HomePage</a>
+          </div>
         </div>
-      </div>
-      <div class="card bg-dark" style="width: 18rem;">
-        <img src="/img/CMP.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Console Mini Project</h5>
-          <p class="card-text" >Java를 활용한 피자 주문 콘솔 프로그램</p><br>
-          <a href="https://github.com/KH-MiniProject" target='_blank' class="btn btn-primary stretched-link">Go Console Mini Project</a>
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="/img/CMP.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Console Mini Project</h5>
+            <p class="card-text" >Java를 활용한 피자 주문 콘솔 프로그램</p><br>
+            <a href="https://github.com/KH-MiniProject" target='_blank' class="btn btn-primary stretched-link">Go Console Mini Project</a>
+          </div>
         </div>
-      </div>
-      <div class="card bg-dark" style="width: 18rem;">
-        <img src="/img/TodoVue.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Todo-Vue</h5>
-          <p class="card-text" >Vue.js를 할용한 Todo App</p><br>
-          <a href="https://github.com/ymiru0324/Todo-Vue" target='_blank' class="btn btn-primary stretched-link">Go Todo-Vue</a>
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="/img/TodoVue.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Todo-Vue</h5>
+            <p class="card-text" >Vue.js를 할용한 Todo App</p><br>
+            <a href="https://github.com/ymiru0324/Todo-Vue" target='_blank' class="btn btn-primary stretched-link">Go Todo-Vue</a>
+          </div>
         </div>
-      </div>
-      <div class="card bg-dark" style="width: 18rem;">
-        <img src="/img/AMP.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">AMP</h5>
-          <p class="card-text" >Spring Framework를 활용한 <br>학원 관리 사이트</p>
-          <a href="https://github.com/ymiru0324/AMP" target='_blank' class="btn btn-primary stretched-link">Go AMP</a>
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="/img/AMP.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AMP</h5>
+            <p class="card-text" >Spring Framework를 활용한 <br>학원 관리 사이트</p>
+            <a href="https://github.com/ymiru0324/AMP" target='_blank' class="btn btn-primary stretched-link">Go AMP</a>
+          </div>
         </div>
-      </div>
-      <div class="card bg-dark" style="width: 18rem;">
-        <img src="/img/BU_Check.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">BU_Check</h5>
-          <p class="card-text" >C#을 활용한 출석 체크 프로그램</p><br>
-          <a href="https://github.com/ymiru0324/BU_Check" target='_blank' class="btn btn-primary stretched-link">Go BU_Check</a>
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="/img/BU_Check.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BU_Check</h5>
+            <p class="card-text" >C#을 활용한 출석 체크 프로그램</p><br>
+            <a href="https://github.com/ymiru0324/BU_Check" target='_blank' class="btn btn-primary stretched-link">Go BU_Check</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
+  </section>
 <!-- Project -->
 
-<!-- Instagram -->
-  <div class="bg-dark" id="Instagram">
-    Instagram
-    <div id="instagram-container">
-      <h1>My Instagram Feed 2020</h1>
-      <div id="instagram-myfeed">-- 여기에 인스타 그램 피드 삽입 --</div>
+  <hr class="_hr">
+
+<!-- footer -->
+  <div id="footer">
+    <div id="footer_container">
+      <span>
+        <a href="https://github.com/ymiru0324/KH-HomePage" target='_blank'>
+          <img src="/img/github.png" alt="HomePage Project"> HomePage Project
+        </a>
+      </span>
+
+    </div>
   </div>
-
-  <script>
-    // var api_endpoint = "본인계정의 long-lived-access-token";
-    var api_endpoint = "https://v1.nocodeapi.com/yongmini/instagram/ToXUBLgMvXQEXXQt";
-    
-    $.get( api_endpoint, function( json ) {
-      
-      var instabanner = $('#instagram-myfeed');
-      var outputHtml = "";
-      outputHtml += '<ul class="myfeed">';
-      
-      var limit = 12; 
-      var myfeed = json.data;
-      for (var i = 0; i < limit; i++) {			
-        
-        outputHtml += '<li>';		
-        
-        if(myfeed[i].media_type == "VIDEO"){
-          outputHtml += '<i class="fas fa-video"></i><a target="_blank" href="' + myfeed[i].permalink+'" style="background-image: url('+myfeed[i].thumbnail_url+')"></a>';
-        }else {
-          outputHtml += '<a target="_blank" href="' + myfeed[i].permalink+'" style="background-image: url('+myfeed[i].media_url+')"></a>';	
-        }
-        outputHtml += '</li>';
-      }	
-      outputHtml += "</ul>";		
-      instabanner.html( outputHtml );
-      
-    });//end get
-    </script>
-    <style type="text/css">
-    .fa-video {position:absolute !important;display:block;top:5%;right:5%;z-index:999;width:20px;height:20px;font-size:20px !important;color:#fff !important;opacity:0.9;}
-    </style>
-<!-- Instagram -->
-
-<!-- test div -->
-<div class="bg-dark" id="footer" style="height: 500px;">
-  footer
-</div>
-<!-- test div -->
-
+<!-- footer -->
 </body>
 </html>
