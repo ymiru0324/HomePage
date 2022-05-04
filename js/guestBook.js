@@ -63,9 +63,14 @@ const renderGuestbook = (guestbooks = JSON.parse(localStorage.getItem('guestbook
     const {username, content, datetime} = guestbook;
     const html = `<tr>
       <td>${index + 1}</td>  
-      <td>Name : ${username}</td>  
-      <td>Comments ${content}</td>  
-      <td>Date : ${formatDatetime(datetime)}</td>  
+      <td>${username}</td>
+      <td>${formatDatetime(datetime)}</td>  
+    </tr>
+    <tr>
+      <td colspan="3">${content}</td>
+    </tr>
+    <tr>
+      <td colspan="3"><hr></td>  
     </tr>`;
     tbody.innerHTML += html;
   });
@@ -94,12 +99,14 @@ $(document).ready(function() {
 
       if($(this).val().length > 100) {
           $(this).val($(this).val().substring(0, 100));
-          $('#textLimit').html("(100 / 100)");
-      }
-  });
-  $('#username').on('keyup', function() {
-    if($(this).val().length > 10) {
-      $(this).val($(this).val().substring(0, 10));
+          alert("100자 이하로 입력해 주세요 !")
+          // $('#textLimit').html("(100 / 100)");
+        }
+      });
+      $('#username').on('keyup', function() {
+        if($(this).val().length > 10) {
+          $(this).val($(this).val().substring(0, 10));
+          alert("10자 이하로 입력해 주세요 !")
     }
   });
 });

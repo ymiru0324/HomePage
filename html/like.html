@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <!-- css -->
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="/css/timeline.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/timeline.css" rel="stylesheet">
 
 </head>
 <body>
@@ -27,7 +27,7 @@
   <div class="progressbar"></div>
 </div>
 
-<script src="/js/scroll.js"></script>
+<script src="../js/scroll.js"></script>
 <!-- scroll -->
 
 <!-- nav -->
@@ -36,15 +36,15 @@
     <span class="navbar-brand"></span>
     <span class="navbar-brand"><a class="MoveNavBar" href="#">Music🎸</a></span>
     <span class="navbar-brand"><a class="MoveNavBar" href="#">Drink🥃</a></span>
-    <span class="navbar-brand"><a class="MoveNavBar" href="#">Instagram <img src="/img/insta.png" id="insta-img"></a></span>
+    <span class="navbar-brand"><a class="MoveNavBar" href="#">Instagram <img src="../img/insta.png" id="insta-img"></a></span>
     <span class="navbar-brand"><a class="MoveNavBar" href="#">GuestBook🙆‍♂️</a></span>
-    <span class="navbar-brand"><a href="/html/main.html">\^_^</a></span>
+    <span class="navbar-brand"><a href="../index.html">\^_^</a></span>
     <span class="navbar-brand"></span>
   </div>
 </nav> 
 <div class="bg-dark" id="nav_div"></div>
 
-<script src="/js/nav.js"></script>
+<script src="../js/nav.js"></script>
 <!-- nav -->
 
 <!-- Music -->
@@ -118,7 +118,7 @@
     </div>
   </section>
 
-  <script src="/js/insta.js"></script>
+  <script src="../js/insta.js"></script>
 <!-- Instagram -->
 
   <hr class="_hr">
@@ -126,52 +126,56 @@
 <!-- GuestBook -->
   <section class="box4">
     <div class="bg-dark" id="GuestBook">
-
-      <form action="javascript:saveGuestbook();" name="guestbookFrm">
-        <div class="mb-3 guestbook-form bg-dark">
-          <!-- <label for="username" class="form-label">이름 : </label> -->
-          <input type="text" class="form-control" name="username" id="username" placeholder="Name" aria-describedby="username">
-          <button type="submit" class="btn btn-light">제출</button>
-        </div>
-        <div class="mb-3 guestbook-form bg-dark">
-          <!-- <label for="content" class="form-label">내용 : </label> -->
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Comments" name="content" id="content" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Comments</label>
-            <div id="textLimit" style="color: white"></div>
-          </div>
-        </div>
-      </form>
-
-      <div id="div-guestbook">
-
-      </div>
+      <div id="GuestBook_container">
+        <div><h2 class="info_Container">GuestBook</h2><br></div>
       
-      <table id="tb-guestbook">
-        <!-- thead>tr>th*4 -->
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>이름</th>
-            <th>내용</th>
-            <th>작성일시</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+        <form action="javascript:saveGuestbook();" name="guestbookFrm">
+          <div class="mb-3 guestbook-form bg-dark">
+            <div id="guestbook-form-container">
+              <input type="text" class="form-control" name="username" id="username" placeholder="Name" aria-describedby="username">
+              <button type="submit" class="btn btn-secondary" id="guestbook-form-submit">Submit</button>
+              <!-- <div id="textLimit" style="color: white"></div> -->
+            </div>
+          </div>
+          <div class="mb-3 guestbook-form bg-dark">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Comments" name="content" id="content" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+          </div>
 
+        </form>
+        <div id="div-guestbook">
+          <table id="tb-guestbook">
+            <tbody>
+              <tr>
+                <td>No</tb>
+                <td>Name</tb>
+                <td style="width:40%"></td>
+                <td>Date</tb>
+              </tr>
+              <tr>
+                <td colspan="3">Comments</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
     </div>
   </section>
 
-  <script src="/js/guestBook.js"></script>
+  <script src="../js/guestBook.js"></script>
 <!-- GuestBook -->
+
+  <hr class="_hr">
 
 <!-- footer -->
   <div id="footer">
     <div id="footer_container">
       <span>
         <a href="https://github.com/ymiru0324/KH-HomePage" target='_blank'>
-          <img src="/img/github.png" alt="HomePage Project"> HomePage Project
+          <img src="../img/github.png" alt="HomePage Project"> HomePage Project
         </a>
       </span>
 
