@@ -69,13 +69,13 @@
     font-weight: 100;
   }
   #AboutMe_info_span {
-    width: 100px;
+    width: 15%;
     text-align: center;
     float:left;
     font-weight: 400;
   }
   #AboutMe_info_a {
-    width: 500px;
+    width: 50%;
     float:left;
     padding-left: 20px;
     line-height: 55px;
@@ -176,21 +176,19 @@
   }
 /* Project */
 
-/* Music */
-  #Music {
+/* Like it */
+  #Like {
     height: 500px;
     border: 1px solid blue;
     color: white;
+    display: flex;
+    justify-content: center;
   }
-/* Music */
-
-/* Drink */
-  #Drink {
-    height: 500px;
-    border: 1px solid blue;
-    color: white;
+  #Like_container {
+    width: 50%;
+    border: 1px solid green;
   }
-/* Drink */
+/* Like it */
 
 /* Instagram */
   #Instagram { 
