@@ -210,18 +210,56 @@
   }
 /* Like it - Drink*/
 
-#Like_Rock {
-  border: 1px solid blue;
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-#Like_Rock_container {
-  height: 500px;
-  width: 60%;
-  border: 1px solid green;
-  text-align: center;
-}
+/* Like it - Rock*/
+  #Like_Rock {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  #Like_Rock_container {
+    width: 60%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .flip { 
+    width: 300px;
+    height: 350px;
+    position: relative; 
+    perspective: 1100px;
+    margin: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .card-rock {
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    transition: .8s;
+    transform-style: preserve-3d;
+    
+  } 
+  .front, .back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .front {
+    background: tomato; 
+  }
+  .back { 
+    background: black; 
+    transform: rotateY(180deg);
+  }
+  .flip:hover .card-rock {
+    transform: rotateY(180deg);
+  }
+/* Like it - Rock*/
 
 /* Instagram */
   #Instagram { 
