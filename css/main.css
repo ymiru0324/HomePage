@@ -176,19 +176,49 @@
   }
 /* Project */
 
-/* Like it */
-  #Like {
-    height: 500px;
-    border: 1px solid blue;
+/* Like it - Drink*/
+  #Like_Drink {
     color: white;
     display: flex;
     justify-content: center;
   }
-  #Like_container {
-    width: 50%;
-    border: 1px solid green;
+  #Like_Drink_container {
+    width: 60%;
+    text-align: center;
+    margin-bottom:40px;
   }
-/* Like it */
+  .drink_slide > img { 
+    vertical-align:top; 
+  }
+  #drink_gallery { 
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width:800px; 
+    height:450px; 
+    overflow: hidden;
+  }
+  .drink_slide { 
+    width:3200px; 
+    position:relative; 
+  }
+  .drink_slide img { 
+    float:left; 
+  }
+/* Like it - Drink*/
+
+#Like_Rock {
+  border: 1px solid blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+#Like_Rock_container {
+  height: 500px;
+  width: 60%;
+  border: 1px solid green;
+  text-align: center;
+}
 
 /* Instagram */
   #Instagram { 
