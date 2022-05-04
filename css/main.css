@@ -190,6 +190,9 @@
   .drink_slide > img { 
     vertical-align:top; 
   }
+  .drink_slide > a:focus {
+    outline:none;
+  }
   #drink_gallery { 
     display: inline-block;
     vertical-align: middle;
@@ -199,10 +202,10 @@
     overflow: hidden;
   }
   .drink_slide { 
-    width:3200px; 
+    width:3220px; 
     position:relative; 
   }
-  .drink_slide img { 
+  .drink_slide > img { 
     float:left; 
   }
 /* Like it - Drink*/

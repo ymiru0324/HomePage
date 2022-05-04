@@ -6,7 +6,7 @@ function auto() {
   if (cnt == inum) { // if문의 실행문이 한줄일때에만 붙여서 쓰기 가능
     cnt = 0
   };
-  $(".drink_slide").animate({"left": -800 * cnt}, 500);
+  $(".drink_slide").animate({"left": -805 * cnt}, 500);
 };
 
 setInterval("auto()", 3000);

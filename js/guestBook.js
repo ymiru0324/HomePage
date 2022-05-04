@@ -24,7 +24,7 @@ document.guestbookFrm.addEventListener('submit', (e) => {
   제출
 */
 const saveGuestbook = () => {
-  console.log("saveGuestbook 호출!");
+  // console.log("saveGuestbook 호출!");
   const usernameVal = document.querySelector("#username").value;
   const contentVal = document.querySelector("#content").value;
 
