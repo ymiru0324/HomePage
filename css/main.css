@@ -222,6 +222,31 @@
   }
 /* Instagram */
 
+/* GuestBook */
+  #GuestBook {
+    height: 500px;
+    border: 1px solid blue;
+  }
+  #content {
+    color: black;
+  }
+  #div-guestbook {
+    color: white;
+
+  }
+  table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 10px 0;
+    color: white
+  }
+  th, td {
+    border: 1px solid #000;
+    padding: 5px;
+    color: white
+  }
+/* GuestBook */
+
 /* footer */
   #footer {
     margin-top: 30px;
