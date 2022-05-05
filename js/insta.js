@@ -2,18 +2,8 @@ const URL = "https://v1.nocodeapi.com/yongmini/instagram/JXoEPxaNOPMSdFJW"
 
 
 $(".btn-cardOpen").click(() => {
-  // $(e.target)
-    // .next()
-    // .slideDown()
-    // .slideUp()
-    // .slideToggle()
-
-  // 아코디언
   $("#insta-card_container")
-    // .next()
     .slideToggle()
-    // .siblings(".insta-card")
-    // .slideUp();
 });
 
 

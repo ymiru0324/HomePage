@@ -1,41 +1,48 @@
-document.loginFrm.addEventListener('submit', (e) => {
-  const userIdVal = document.querySelector("#userId").value;
-  const userPwVal = document.querySelector("#userPw").value;
+const login = () => {
+  document.loginFrm.addEventListener('submit', (e) => {
+    const userIdVal = document.querySelector("#userId").value;
+    const userPwVal = document.querySelector("#userPw").value;
+  
+    const regExpId1 = /^[a-z][a-z\d]{3,11}$/; // 영소문자로 시작하는 4 ~ 12 글자
+    const regExpId2 = /[0-9]/; // 아이디 숫자 하나 이상 포함
+    
+    const joinCheck = JSON.parse(localStorage.getItem('joins')); // joins 배열 가져옴
+    console.log(typeof joinCheck, joinCheck);
+    
+    const userIdCheck = 
+      joinCheck.forEach((test) => {
+        const {userId} = test;
+        console.log(`${userId}`);
+      });
 
-  if(!userIdVal) {
-    alert("아이디를 작성해주세요")
-    e.preventDefault();
-    return;
-  }
-  if(!userPwVal) {
-    alert("비밀번호를 작성해주세요")
-    e.preventDefault();
-    return;
-  }
+    if(!userIdVal) {
+      alert("아이디를 작성해주세요")
+      e.preventDefault();
+      return;    
+    } else if(userIdVal != userIdCheck) {
+      alert("id")
+      e.preventDefault();
+      return;
+    } else if(regExpId1.test(userIdVal) == false) {
+      alert("올바른 아이디 형식이 아닙니다 ! (영소문자로 시작하는 4~12글자)")
+      e.preventDefault();
+      return;
+    } else if(regExpId2.test(userIdVal) == false) {
+      alert("올바른 아이디 형식이 아닙니다 ! (아이디 숫자 1글자 이상 포함)")
+      e.preventDefault();
+      return;
+    } else if(!userPwVal) {
+      alert("비밀번호를 작성해주세요")
+      e.preventDefault();
+      return;
+    } else if(userPwVal.length < '6') {
+      alert('비밀번호를 6자리 이상 입력해주세요 !')
+      e.preventDefault();
+      return;
+    } else if (userIdVal.value != "" && userPwVal.value != "") {
+      alert("로그인 완료 !")
+      location.href = '../html/main.html'
+    }
+  });
 
-  // 회원가입 후 localStroage 에 정보 저장
-  // 로그인 시 localStroage에 저장된 정보와 맞다면 들어가기
-});
-
-
-// // 로그인 유효성 검사
-// $('form').on('submit', function(e) {
-//   var emailCheck = document.getElementById('email').value;
-//   var pwCheck = document.getElementById('pw').value;
-//   if (emailCheck == '') {
-//     alert('아이디를 입력하세요 !')
-//     e.preventDefault();
-//   } else if (/\S+@\S+\.\S+/.test(emailCheck) == false) {
-//     alert('이메일 형식이 아닙니다 !')
-//     e.preventDefault();
-//   } else if (pwCheck == '') {
-//     alert('비밀번호를 입력하세요 !')
-//     e.preventDefault();
-//   } else if (pwCheck.length < '6') {
-//     alert('비밀번호를 6자리 이상 입력해주세요 !')
-//     e.preventDefault();
-//   } else if (/[A-Z]/.test(pwCheck) == false) {
-//     alert('비밀번호에 대문자를 입력해주세요 !')
-//     e.preventDefault();
-//   }
-// });
+};

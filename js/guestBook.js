@@ -1,9 +1,3 @@
-/* 
-폼 유형 검사는 submit 핸들러에서 진행한다.
-
-- addEventListener : e.preventDefault()
-- onsubmit : return false; e.preventDefault()
-*/
 document.guestbookFrm.addEventListener('submit', (e) => {
   const usernameVal = document.querySelector("#username").value;
   const contentVal = document.querySelector("#content").value;

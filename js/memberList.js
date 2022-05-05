@@ -8,13 +8,11 @@ const renderJoin = (joins = JSON.parse(localStorage.getItem('joins'))) => {
   tbody.innerHTML = ""; // 초기화
 
   joins.forEach((join, index) => {
-    const {userName, userId, userPw, userPwCheck, datetime} = join;
+    const {userName, userId, datetime} = join;
     const html = `<tr>
       <td>${index + 1}</td>
       <td>${userName}</td>
       <td>${userId}</td>
-      <td>${userPw}</td>
-      <td>${userPwCheck}</td>
       <td>${formatDatetime(datetime)}</td>
     </tr>`;
     tbody.innerHTML += html;

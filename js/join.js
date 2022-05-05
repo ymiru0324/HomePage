@@ -40,13 +40,13 @@ document.joinFrm.addEventListener('submit', (e) => {
   } else if (userPwVal != userPwCheckVal) {
     alert("비밀번호가 일치하지 않습니다.");
     return;
-  } else if(userPwCheckVal.length < '6') {
+  } else if(userPwVal.length < '6') {
     alert('비밀번호를 6자리 이상 입력해주세요 !')
     e.preventDefault();
     return;
   } else if (userNameVal.value != "" && userIdVal.value != "" && userPwVal.value != "" && userPwCheckVal.value != "") {
     alert("회원가입 완료 !")
-    location.href='../html/login.html'
+    location.href = '../index.html'
   }
 });
 
@@ -60,7 +60,6 @@ const saveJoin = () => {
   const userPwVal = document.querySelector("#userPw").value;
   const userPwCheckVal = document.querySelector("#userPwCheck").value;
 
-  // 방명록객체 생성
   const join = new Join(userNameVal, userIdVal, userPwVal, userPwCheckVal);
   // console.log(join);
 

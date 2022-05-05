@@ -23,31 +23,39 @@
 <body class="bg-dark">
   <div class="bg-dark" id="memberList">
     <div class="bg-dark" id="memberList-container">
-
-    <form action="javascript:memberList();" name="joinFrm"></form>
-    <div><h2 class="info_Container">MemberList</h2><br></div>
-      <div id="div-guestbook">
-        <table id="tb-guestbook">
-          <thead>
-            <th>No</th>
-            <th>Name</th>
-            <th>ID</th>
-            <th>Password</th>
-            <th>PasswordCheck</th>
-            <th>datetime</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+      <form action="javascript:memberList();" name="joinFrm"></form>
+      <div><h2 class="info_Container">MemberList</h2><br></div>
+        <div id="btn-container">
+          <a href="../index.html">
+            <button type="button" class="btn btn-secondary">Login</button>
+          </a>
+          <a href="../html/join.html">
+            <button type="button" class="btn btn-secondary">Join</button>
+          </a>
+        </div>
+        <div id="div-guestbook">
+          <table id="tb-guestbook">
+            <thead>
+              <th>No</th>
+              <th>Name</th>
+              <th>ID</th>
+              <th>DateTime</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
       </div>
+    </div>
   </div>
 
   <script src="../js/memberList.js"></script>
