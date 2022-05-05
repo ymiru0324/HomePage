@@ -6,23 +6,28 @@ const login = () => {
     const regExpId1 = /^[a-z][a-z\d]{3,11}$/; // 영소문자로 시작하는 4 ~ 12 글자
     const regExpId2 = /[0-9]/; // 아이디 숫자 하나 이상 포함
     
-    const joinCheck = JSON.parse(localStorage.getItem('joins')); // joins 배열 가져옴
-    console.log(typeof joinCheck, joinCheck);
-    
-    const userIdCheck = 
-      joinCheck.forEach((test) => {
-        const {userId} = test;
-        console.log(`${userId}`);
-      });
+    // 아이디 있는지 검사
+    // const joinCheck = JSON.parse(localStorage.getItem('joins')); // joins 배열 가져옴
+    // console.log(typeof joinCheck, joinCheck);
+    // const check = () => {
+    //   for (let i=0; i<joinCheck.userId; i++) {
+    //   console.log(joinCheck[i].userId);
+    //   if(userIdVal != joinCheck[i].userId.value) {
+    //     alert('같은게 있을때');
+    //     // return true;
+    //   } else if(userIdVal == joinCheck[i].userId.value) {
+    //     alert('같은게 없을때')
+    //     // return false;
+    //   }
+    //   // e.preventDefault();
+    //   }
+    //   alert("id")
+    // };
 
     if(!userIdVal) {
       alert("아이디를 작성해주세요")
       e.preventDefault();
       return;    
-    } else if(userIdVal != userIdCheck) {
-      alert("id")
-      e.preventDefault();
-      return;
     } else if(regExpId1.test(userIdVal) == false) {
       alert("올바른 아이디 형식이 아닙니다 ! (영소문자로 시작하는 4~12글자)")
       e.preventDefault();
