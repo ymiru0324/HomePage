@@ -17,11 +17,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <!-- css -->
-<link href="../css/login.css" rel="stylesheet">
+<link href="../css/join.css" rel="stylesheet">
 
 </head>
 <body class="bg-dark">
+  <div class="bg-dark" id="join">
+    <div><h2 class="info_Container">Join</h2><br></div>
+    <form action="javascript:saveJoin();" name="joinFrm" id="joinFrm">
+      <div id="joinFrm-container">
 
+        <div class="mb-3" id="name-container">
+          <label for="userName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="userName" name="userName">
+        </div>
+        <div class="mb-3" id="id-container">
+          <label for="userId" class="form-label">ID</label>
+          <input type="text" class="form-control" id="userId" name="userId">
+        </div>
+        <div class="mb-3" id="pw-container">
+          <label for="userPw" class="form-label">Password</label>
+          <input type="password" class="form-control" id="userPw" name="userPw">
+        </div>
+        <div class="mb-3" id="pwCheck-container">
+          <label for="userPwCheck" class="form-label">PasswordCheck</label>
+          <input type="password" class="form-control" id="userPwCheck" name="userPwCheck">
+        </div>
+        <div id="btn-container">
+          <button type="submit" class="btn btn-secondary" id="joinSubmit">Submit</button>
+          <a href="../html/login.html">
+            <button type="button" class="btn btn-secondary">Login</button>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
   
+<script src="../js/join.js"></script>
 </body>
 </html>

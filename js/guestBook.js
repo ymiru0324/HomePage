@@ -12,11 +12,12 @@ document.guestbookFrm.addEventListener('submit', (e) => {
     alert("이름을 작성해주세요")
     e.preventDefault();
     return;
-  }
-  if(!contentVal) {
+  } else if(!contentVal) {
     alert("내용을 작성해주세요")
     e.preventDefault();
     return;
+  } else {
+    alert("작성 완료 !")
   }
 });
 
